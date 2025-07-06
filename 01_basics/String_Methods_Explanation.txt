@@ -1,0 +1,72 @@
+
+🔠 Character Access
+
+* `charAt(index)`: Returns the character at the given index.
+* `charCodeAt(index)`: Unicode of character at index.
+* `codePointAt(index)`: Handles Unicode code points (better for emoji and special symbols).
+
+🔍 **Searching**
+
+* `indexOf(substr)`: First index of substring.
+* `lastIndexOf(substr)`: Last index of substring.
+* `includes(substr)`: `true` if substring exists.
+* `startsWith(substr)`: `true` if it starts with substring.
+* `endsWith(substr)`: `true` if it ends with substring.
+* `search(regex)`: Index of match using regex.
+* `match(regex)`: Returns matches (can be an array).
+* `matchAll(regex)`: Returns iterator for all matches.
+
+
+✂️ **Extracting and Slicing**
+
+* `slice(start, end)`: Extracts a section of a string.
+* `substring(start, end)`: Similar to `slice` but handles negatives differently.
+* `substr(start, length)`: Extracts part of string (deprecated but still works).
+* `split(separator)`: Splits into an array using separator.
+
+---
+
+🛠️ **Manipulation**
+
+* `concat(str)`: Joins two strings.
+* `repeat(n)`: Repeats the string `n` times.
+* `replace(find, replace)`: Replaces first match.
+* `replaceAll(find, replace)`: Replaces all matches.
+* `padStart(length, char)`: Pads from the start.
+* `padEnd(length, char)`: Pads from the end.
+* `trim()`, `trimStart()`, `trimEnd()`: Removes spaces.
+
+---
+
+🔡 **Case Conversion**
+
+* `toUpperCase()`, `toLowerCase()`
+* `toLocaleUpperCase()`, `toLocaleLowerCase()`
+
+---
+
+🧪 **Other**
+
+* `normalize()`: Unicode normalization.
+* `localeCompare()`: Compares strings (e.g., for sorting).
+* `isWellFormed()`: Checks if string is valid Unicode.
+* `toWellFormed()`: Fixes malformed Unicode.
+
+---
+
+🧙‍♂️ **Deprecated HTML formatting methods** (not recommended):
+
+* `anchor()`, `big()`, `blink()`, `bold()`, `fixed()`, `fontcolor()`, `fontsize()`, `italics()`, `link()`, `small()`, `strike()`, `sub()`, `sup()`
+
+
+
+🧬 **Meta**
+
+* `constructor`: The `String` constructor.
+* `length`: Number of characters in string.
+* `valueOf()`, `toString()`: Primitive string value.
+
+
+🔁 **Iteration**
+
+ `[Symbol.iterator]`: Enables looping over characters with `for...of`.
